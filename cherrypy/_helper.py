@@ -7,7 +7,7 @@ from cherrypy._cpcompat import text_or_bytes
 import cherrypy
 
 
-def expose(func=None, alias=None):
+def expose(func: ... = None, alias: ... = None) -> ...:
     """Expose the function or class.
 
     Optionally provide an alias or set of aliases.

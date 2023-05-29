@@ -101,14 +101,14 @@ class Server(ServerAdapter):
     ssl_context = None
     """When using PyOpenSSL, an instance of SSL.Context."""
 
-    ssl_certificate = None
+    ssl_certificate: ... = None
     """The filename of the SSL certificate to use."""
 
     ssl_certificate_chain = None
     """When using PyOpenSSL, the certificate chain to pass to
     Context.load_verify_locations."""
 
-    ssl_private_key = None
+    ssl_private_key: ... = None
     """The filename of the private key to use with SSL."""
 
     ssl_ciphers = None

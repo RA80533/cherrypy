@@ -83,7 +83,7 @@ from . import _cpwsgi as wsgi
 from . import process
 try:
     from .process import win32
-    engine = win32.Win32Bus()
+    engine: ... = win32.Win32Bus()
     engine.console_control_handler = win32.ConsoleCtrlHandler(engine)
     del win32
 except ImportError:
@@ -151,7 +151,7 @@ server = _cpserver.Server()
 server.subscribe()
 
 
-def quickstart(root=None, script_name='', config=None):
+def quickstart(root: ... = None, script_name='', config: ... = None):
     """Mount the given root, start the builtin server (and engine), then block.
 
     root: an instance of a "controller class" (a collection of page handler

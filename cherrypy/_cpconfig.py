@@ -151,7 +151,7 @@ def merge(base, other):
 class Config(reprconf.Config):
     """The 'global' configuration data for the entire CherryPy process."""
 
-    def update(self, config):
+    def update(self, config: ...):
         """Update self from a dict, file or filename."""
         _if_filename_register_autoreload(config)
         super(Config, self).update(config)

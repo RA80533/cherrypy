@@ -466,6 +466,7 @@ class Toolbox(object):
         return decorator
 
 
+default_toolbox: ...
 default_toolbox = _d = Toolbox('tools')
 _d.session_auth = SessionAuthTool(cptools.session_auth)
 _d.allow = Tool('on_start_resource', cptools.allow)

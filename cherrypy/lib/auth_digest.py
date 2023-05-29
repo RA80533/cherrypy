@@ -54,7 +54,7 @@ def TRACE(msg):
 # of get_ha1() functions for three different kinds of credential stores.
 
 
-def get_ha1_dict_plain(user_password_dict):
+def get_ha1_dict_plain(user_password_dict: ...) -> ...:
     """Returns a get_ha1 function which obtains a plaintext password from a
     dictionary of the form: {username : password}.
 

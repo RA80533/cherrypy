@@ -474,7 +474,7 @@ _HTTPErrorTemplate = '''<!DOCTYPE html PUBLIC
 '''
 
 
-def get_error_page(status, **kwargs):
+def get_error_page(status: ..., **kwargs: ...):
     """Return an HTML page, containing a pretty error response.
 
     status should be an int or a str.
@@ -578,7 +578,7 @@ def _be_ie_unfriendly(status):
         response.headers['Content-Length'] = str(len(content))
 
 
-def format_exc(exc=None):
+def format_exc(exc: ... = None):
     """Return exc (or sys.exc_info if None), formatted."""
     try:
         if exc is None:
